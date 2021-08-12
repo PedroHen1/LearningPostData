@@ -7,18 +7,18 @@ import {
 
 import axios from 'axios';
 
+import PostData from './PostData';
+
 const App = () => {
-  const result = {
-    firstName: 'Fred',
-    lastName: 'Flintstone'
-  }
-  axios({
-    method: 'post',
-    url: 'https://webhook.site/4f334f37-0aa8-47e3-b1ff-8743d81fd7e1',
-    data: result
-  }).then(function (response) {
-    alert(JSON.stringify(response.config.data));
-  });;
+  // const result = {
+  //   firstName: 'Fred',
+  //   lastName: 'Flintstone'
+  // }
+  // axios({
+  //   method: 'post',
+  //   url: 'https://webhook.site/4f334f37-0aa8-47e3-b1ff-8743d81fd7e1',
+  //   data: result
+  // });
 
 
   //ANOTHER WAY TO DO.
@@ -54,6 +54,7 @@ const App = () => {
   return (
     <View>
       <Text>Learning...</Text>
+      <PostData />
     </View>
   )
 }
